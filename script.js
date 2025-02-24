@@ -222,5 +222,13 @@ spans.forEach((span, index) => {
 
 
 function toggleMenu() {
-  document.querySelector(".right_nav").classList.toggle("show");
+  const menu = document.querySelector(".right_nav");
+  menu.classList.toggle("show");
 }
+
+// Hide menu when resizing back to desktop mode
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 768) {
+      document.querySelector(".right_nav").classList.remove("show");
+  }
+});
