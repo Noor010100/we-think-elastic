@@ -219,3 +219,8 @@ const spans = document.querySelectorAll("#circular_text span");
 spans.forEach((span, index) => {
   span.style.transform = `rotate(${index * 9}deg)`;
 });
+
+
+function toggleMenu() {
+  document.querySelector(".right_nav").classList.toggle("show");
+}

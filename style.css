@@ -131,6 +131,7 @@ nav button{
     font-family: 'DM Sans', sans-serif;
     font-weight: 10000;
     letter-spacing: -25px;
+    
 }
 
 #page2{
@@ -502,4 +503,59 @@ footer p{
 
 footer p:hover{
     color: #F3C77C;
+}
+
+@media screen and (  (max-width: 512px) ){
+    .right_nav {
+        display: none;
+        flex-direction: column;
+        background: #444;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .right_nav.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    #st_anime{
+        display: none;
+    }
+}
+
+@media screen and (  (max-width: 512px) ){
+    #page1{
+        width: 100%;
+        height: 50vh;
+        /* background-color: red; */
+        
+
+
+    }
+
+    #page1 h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+    }
+
+    #page2 video{
+        width: 90%;
+        height: 90vh;
+        margin-left: 1.3rem;
+        
+        object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+    }
 }
